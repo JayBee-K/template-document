@@ -1510,6 +1510,12 @@ footer .footer-inner .footer-list ul li + li {
         height: 50px;
     }
 
+    header .login-inner .login-info > a span {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4em;
+    }
+
     header .login-inner .login-info .login-info-right > a {
         font-size: 1.2em;
     }
