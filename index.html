@@ -35,7 +35,6 @@
 	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-
 <div class="popup-theme">
 	<div class="modal fade" id="modalLogin" tabindex="-1">
 		<div class="modal-dialog">
@@ -209,6 +208,368 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal fade modal-price" id="modalPrice" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content rounded-0 border-0">
+				<div class="user-info">
+					<div class="user-left">
+						<div class="user-image">
+							<a href="#">
+								<img src="./assets/images/user.png" alt="">
+							</a>
+						</div>
+						<div class="user-content">
+							<h6 class="mb-1 text-main font-weight-bold">
+								Hoàng Tấn
+							</h6>
+							<p class="mb-1 text-muted text-09">
+								thtan0407@gmail.com
+							</p>
+							<a href="#" class="d-inline-block text-main font-weight-bold text-09">
+								Lịch sử giao dịch
+							</a>
+						</div>
+					</div>
+					<div class="user-right">
+						<p class="mb-1 text-muted">Tài khoản: <span class="color-main">0 <sup>đ</sup></span></p>
+						<p class="mb-0 text-muted">Doanh thu: <span class="color-main">0 <sup>đ</sup></span></p>
+					</div>
+				</div>
+				<div class="modal-header rounded-0 p-0">
+					<h5 class="modal-title d-block py-3 px-4 w-100 font-weight-bold">Nạp tiền vào tài khoản</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="modal-tab">
+						<ul class="nav nav-tabs border-bottom-0">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link active" data-toggle="tab"
+								   href="#qrcode" type="button">
+									<img src="./assets/images/qr-code.png">
+									<p class="mb-0">QR code</p>
+								</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" data-toggle="tab"
+								   href="#momo"
+								   type="button">
+									<img src="./assets/images/momo.png">
+									<p class="mb-0">Ví momo</p>
+								</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" data-toggle="tab"
+								   href="#atm"
+								   type="button">
+									<img src="./assets/images/atm.png">
+									<p class="mb-0">Thẻ ATM online</p>
+								</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" data-toggle="tab"
+								   href="#card"
+								   type="button">
+									<img src="./assets/images/card.png">
+									<p class="mb-0">Thẻ điện thoại</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-content mt-3">
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="qrcode">
+								<div class="py-4 px-lg-3">
+									<div class="row">
+										<div class="col-lg-6">
+											<form class="form-effect my-0 pb-0" action="">
+												<div class="group-effect">
+													<select name="" class="input-effect" id="money">
+														<!-- để 1 option rỗng nha bình -->
+														<option value=""></option>
+														<option value="50000">50.000 đ</option>
+														<option value="100000">100.000 đ</option>
+														<option value="150000">150.000 đ</option>
+														<option value="200000">200.000 đ</option>
+													</select>
+													<label class="label-effect" for="money">
+														<i class="fas fa-money-bill"></i>
+														<span>Lựa chọn số tiền cần nạp</span>
+													</label>
+												</div>
+												<div class="group-effect">
+													<input type="email" id="phonePrice" class="input-effect">
+													<label class="label-effect" for="phonePrice">
+														<i class="fas fa-phone-alt"></i>
+														<span>Số điện thoại</span>
+													</label>
+												</div>
+												<div class="form-button">
+													<button type="submit"
+													        class="btn btn-primary btn-customize w-100 py-2">
+														<span>
+															Nạp tiền
+														</span>
+													</button>
+												</div>
+												<div class="form-desc mt-3">
+													<ul class="pl-3 mb-0">
+														<li class="mb-2">
+															Thanh toán bằng QRCode trên ứng dụng Mobile Banking của các
+															ngân
+															hàng
+														</li>
+														<li>
+															Nếu gặp lỗi thì
+															<a href="#" class="color-main font-weight-bold">Click vào
+																đây</a>
+														</li>
+													</ul>
+												</div>
+											</form>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-desc px-3 px-lg-0 mt-4 mt-lg-0">
+												<ul class="list-unstyled mb-0">
+													<li class="mb-3">
+														<i class="fas fa-check"></i>
+														Thanh toán bằng QR code bảo mật tiện lợi hơn so với ATM Online
+													</li>
+													<li class="mb-3">
+														<i class="fas fa-check"></i>
+														Sử dụng QR Code trên ứng dụng Mobile Banking của các ngân hàng
+													</li>
+													<li class="mb-3">
+														<i class="fas fa-hand-point-right"></i>
+														Xem hướng dẫn quét QR với <a href=""
+														                             class="color-main text-uppercase">AGRIBANK</a>
+													</li>
+													<li class="mb-3">
+														<i class="fas fa-hand-point-right"></i>
+														Xem hướng dẫn quét QR với <a href=""
+														                             class="color-main text-uppercase">VIETINBANK</a>
+													</li>
+													<li class="mb-3">
+														<i class="fas fa-hand-point-right"></i>
+														Xem hướng dẫn quét QR với <a href=""
+														                             class="color-main text-uppercase">VIETCOMBANK</a>
+													</li>
+													<li class="mb-3">
+														<i class="fas fa-hand-point-right"></i>
+														Xem hướng dẫn quét QR với <a href=""
+														                             class="color-main text-uppercase">BIDV</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="momo">
+								<div class="py-4 px-lg-3">
+									<form class="form-effect my-0 pb-0" action="">
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="group-effect">
+													<select name="" class="input-effect" id="money">
+														<!-- để 1 option rỗng nha bình -->
+														<option value=""></option>
+														<option value="50000">50.000 đ</option>
+														<option value="100000">100.000 đ</option>
+														<option value="150000">150.000 đ</option>
+														<option value="200000">200.000 đ</option>
+													</select>
+													<label class="label-effect" for="money">
+														<i class="fas fa-money-bill"></i>
+														<span>Lựa chọn số tiền cần nạp</span>
+													</label>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="group-effect">
+													<input type="email" id="phonePrice" class="input-effect">
+													<label class="label-effect" for="phonePrice">
+														<i class="fas fa-phone-alt"></i>
+														<span>Số điện thoại</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="form-button mt-0">
+											<button type="submit"
+											        class="btn btn-primary btn-customize w-100 py-2">
+												<span>
+													Nạp tiền
+												</span>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="atm">
+								<div class="py-4 px-lg-3">
+									<div class="row">
+										<div class="col-lg-6">
+											<form class="form-effect my-0 pb-0" action="">
+												<div class="group-effect">
+													<select name="" class="input-effect" id="bank">
+														<!-- để 1 option rỗng nha bình -->
+														<option value=""></option>
+														<option value="1">Vietcombank (VCB)</option>
+														<option value="2">BIDV</option>
+														<option value="3">Agribank</option>
+														<option value="4">Sacombank</option>
+														<option value="1">Vietcombank (VCB)</option>
+														<option value="2">BIDV</option>
+														<option value="3">Agribank</option>
+														<option value="4">Sacombank</option>
+														<option value="1">Vietcombank (VCB)</option>
+														<option value="2">BIDV</option>
+														<option value="3">Agribank</option>
+														<option value="4">Sacombank</option>
+													</select>
+													<label class="label-effect" for="bank">
+														<i class="fas fa-university"></i>
+														<span>Lựa chọn ngân hàng</span>
+													</label>
+												</div>
+												<div class="group-effect">
+													<select name="" class="input-effect" id="money">
+														<!-- để 1 option rỗng nha bình -->
+														<option value=""></option>
+														<option value="50000">50.000 đ</option>
+														<option value="100000">100.000 đ</option>
+														<option value="150000">150.000 đ</option>
+														<option value="200000">200.000 đ</option>
+													</select>
+													<label class="label-effect" for="money">
+														<i class="fas fa-money-bill"></i>
+														<span>Lựa chọn số tiền cần nạp</span>
+													</label>
+												</div>
+												<div class="group-effect">
+													<input type="email" id="phonePrice" class="input-effect">
+													<label class="label-effect" for="phonePrice">
+														<i class="fas fa-phone-alt"></i>
+														<span>Số điện thoại</span>
+													</label>
+												</div>
+												<div class="form-button">
+													<button type="submit"
+													        class="btn btn-primary btn-customize w-100 py-2">
+														<span>
+															Nạp tiền
+														</span>
+													</button>
+												</div>
+											</form>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-desc px-3 px-lg-0 mt-4 mt-lg-0">
+												<ul class="list-unstyled mb-0">
+													<li class="mb-3">
+														<i class="fas fa-check"></i>
+														Nạp sai 5 lần liên tiếp, tài khoản của bạn không thể sử dụng
+														hình thức nạp trong 24h
+													</li>
+													<li class="mb-3">
+														<i class="fas fa-check"></i>
+														Nếu gặp lỗi thì <a href="">Click vào đây</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="card">
+								<div class="py-4 px-lg-3">
+									<div class="row">
+										<div class="col-lg-6">
+											<form class="form-effect my-0 pb-0" action="">
+												<div class="group-effect">
+													<select name="" class="input-effect" id="money">
+														<!-- để 1 option rỗng nha bình -->
+														<option value=""></option>
+														<option value="50000">50.000 đ</option>
+														<option value="100000">100.000 đ</option>
+														<option value="150000">150.000 đ</option>
+														<option value="200000">200.000 đ</option>
+													</select>
+													<label class="label-effect" for="money">
+														<i class="fas fa-money-bill"></i>
+														<span>Lựa chọn số tiền cần nạp</span>
+													</label>
+												</div>
+												<div class="group-effect">
+													<input type="email" id="seriPrice" class="input-effect">
+													<label class="label-effect" for="seriPrice">
+														<i class="fas fa-phone-alt"></i>
+														<span>Mã số thẻ</span>
+													</label>
+												</div>
+												<div class="group-effect">
+													<input type="email" id="seriPrice" class="input-effect">
+													<label class="label-effect" for="seriPrice">
+														<i class="fas fa-phone-alt"></i>
+														<span>Seri thẻ</span>
+													</label>
+												</div>
+												<div class="group-effect">
+													<input type="email" id="phonePrice" class="input-effect">
+													<label class="label-effect" for="phonePrice">
+														<i class="fas fa-phone-alt"></i>
+														<span>Số điện thoại</span>
+													</label>
+												</div>
+												<div class="form-button">
+													<button type="submit"
+													        class="btn btn-primary btn-customize w-100 py-2">
+														<span>
+															Nạp tiền
+														</span>
+													</button>
+												</div>
+												<div class="form-desc mt-3">
+													<ul class="pl-3 mb-0">
+														<li class="mb-2">
+															Phí nạp thẻ <span class="text-danger">35%</span> cho nhà
+															mạng. <span class="color-main font-italic">(Ví dụ: Nạp thẻ 20.000 bạn sẽ nhận được 13.000 vào tài khoản)</span>
+														</li>
+														<li>
+															Nạp sai 5 lần liên tiếp, tài khoản của bạn không thể sử dụng
+															hình thức nạp trong 24h.
+														</li>
+														<li>
+															Mua thẻ nạp online
+															<a href="#" class="color-main font-weight-bold">tại đây</a>
+														</li>
+														<li>
+															Nếu gặp lỗi thì
+															<a href="#" class="color-main font-weight-bold">Click vào
+																đây</a> hoặc liên hệ <a
+																href="mailto:thtan0407@gmail.com"
+																class="color-main font-weight-bold">thtan0407@gmail.com</a>
+														</li>
+													</ul>
+												</div>
+											</form>
+										</div>
+										<div class="col-lg-6">
+											<div class="p-3 p-lg-0">
+												<img src="./assets/images/hd_mobile.png" alt="" class="w-100">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <header class="position-relative shadow-sm bg-white">
@@ -258,7 +619,7 @@
 													<div class="login-info w-100 d-flex align-items-start justify-content-start">
 														<a href="javascript:void(0)">
 															<!-- Sử dụng hình hoặc icon đều được -->
-<!--															<img src="./assets/images/user.png" alt="">-->
+															<!--															<img src="./assets/images/user.png" alt="">-->
 															<span class="fal fa-user"></span>
 														</a>
 														<div class="login-info-right w-100 ml-3">
@@ -1137,1333 +1498,1332 @@
 			</ul>
 		</div>
 	</div>
-</div>
-<div class="wrapper-new bg-light py-5 border-bottom">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="heading h4 mb-4 text-dark font-weight-bolder">
-					Tài liệu mới update
+	<div class="wrapper-new bg-light py-5 border-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="heading h4 mb-4 text-dark font-weight-bolder">
+						Tài liệu mới update
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row row-10">
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/1.jpg" class="border"
-							     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-							<span class="document-pdf">
+			<div class="row row-10">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/1.jpg" class="border"
+								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
+								<span class="document-pdf">
 									<i class="fal fa-file-pdf"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Bảng công thức tích phân - đạo hàm - Mũ - logarit
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Trần Quang
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 2
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 316,644
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 10,117
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Bảng công thức tích phân - đạo hàm - Mũ - logarit
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Trần Quang
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 2
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 316,644
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 10,117
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/2.jpg" class="border"
-							     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-							<span class="document-ppt">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/2.jpg" class="border"
+								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
+								<span class="document-ppt">
 									<i class="fal fa-file-powerpoint"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/2.jpg" class="border"
-							     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-							<span class="document-word">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/2.jpg" class="border"
+								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
+								<span class="document-word">
 									<i class="fal fa-file-word"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/1.jpg" class="border"
-							     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-							<span class="document-excel">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/1.jpg" class="border"
+								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
+								<span class="document-excel">
 									<i class="fal fa-file-excel"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Bảng công thức tích phân - đạo hàm - Mũ - logarit
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Bảng công thức tích phân - đạo hàm - Mũ - logarit
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/1.jpg" class="border"
-							     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-							<span class="document-pdf">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/1.jpg" class="border"
+								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
+								<span class="document-pdf">
 									<i class="fal fa-file-pdf"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Bảng công thức tích phân - đạo hàm - Mũ - logarit
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Trần Quang
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 2
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 316,644
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 10,117
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Bảng công thức tích phân - đạo hàm - Mũ - logarit
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Trần Quang
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 2
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 316,644
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 10,117
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/2.jpg" class="border"
-							     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-							<span class="document-ppt">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/2.jpg" class="border"
+								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
+								<span class="document-ppt">
 									<i class="fal fa-file-powerpoint"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/2.jpg" class="border"
-							     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-							<span class="document-word">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/2.jpg" class="border"
+								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
+								<span class="document-word">
 									<i class="fal fa-file-word"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/1.jpg" class="border"
-							     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-							<span class="document-excel">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/1.jpg" class="border"
+								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
+								<span class="document-excel">
 									<i class="fal fa-file-excel"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Bảng công thức tích phân - đạo hàm - Mũ - logarit
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Bảng công thức tích phân - đạo hàm - Mũ - logarit
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/1.jpg" class="border"
-							     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-							<span class="document-pdf">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/1.jpg" class="border"
+								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
+								<span class="document-pdf">
 									<i class="fal fa-file-pdf"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Bảng công thức tích phân - đạo hàm - Mũ - logarit
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Trần Quang
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 2
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 316,644
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 10,117
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Bảng công thức tích phân - đạo hàm - Mũ - logarit
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Trần Quang
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 2
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 316,644
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 10,117
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/2.jpg" class="border"
-							     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-							<span class="document-ppt">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/2.jpg" class="border"
+								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
+								<span class="document-ppt">
 									<i class="fal fa-file-powerpoint"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/2.jpg" class="border"
-							     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-							<span class="document-word">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/2.jpg" class="border"
+								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
+								<span class="document-word">
 									<i class="fal fa-file-word"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/1.jpg" class="border"
-							     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-							<span class="document-excel">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/1.jpg" class="border"
+								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
+								<span class="document-excel">
 									<i class="fal fa-file-excel"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Bảng công thức tích phân - đạo hàm - Mũ - logarit
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Bảng công thức tích phân - đạo hàm - Mũ - logarit
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/1.jpg" class="border"
-							     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-							<span class="document-pdf">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/1.jpg" class="border"
+								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
+								<span class="document-pdf">
 									<i class="fal fa-file-pdf"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Bảng công thức tích phân - đạo hàm - Mũ - logarit
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Trần Quang
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 2
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 316,644
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 10,117
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Bảng công thức tích phân - đạo hàm - Mũ - logarit
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Trần Quang
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 2
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 316,644
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 10,117
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/2.jpg" class="border"
-							     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-							<span class="document-ppt">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/2.jpg" class="border"
+								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
+								<span class="document-ppt">
 									<i class="fal fa-file-powerpoint"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/2.jpg" class="border"
-							     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-							<span class="document-word">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/2.jpg" class="border"
+								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
+								<span class="document-word">
 									<i class="fal fa-file-word"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/1.jpg" class="border"
-							     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-							<span class="document-excel">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/1.jpg" class="border"
+								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
+								<span class="document-excel">
 									<i class="fal fa-file-excel"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Bảng công thức tích phân - đạo hàm - Mũ - logarit
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Bảng công thức tích phân - đạo hàm - Mũ - logarit
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/1.jpg" class="border"
-							     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-							<span class="document-pdf">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/1.jpg" class="border"
+								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
+								<span class="document-pdf">
 									<i class="fal fa-file-pdf"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Bảng công thức tích phân - đạo hàm - Mũ - logarit
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Trần Quang
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 2
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 316,644
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 10,117
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Bảng công thức tích phân - đạo hàm - Mũ - logarit
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Trần Quang
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 2
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 316,644
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 10,117
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/2.jpg" class="border"
-							     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-							<span class="document-ppt">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/2.jpg" class="border"
+								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
+								<span class="document-ppt">
 									<i class="fal fa-file-powerpoint"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/2.jpg" class="border"
-							     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-							<span class="document-word">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/2.jpg" class="border"
+								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
+								<span class="document-word">
 									<i class="fal fa-file-word"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-				<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-					<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-						<div class="card-header border-bottom-0 bg-white text-center position-relative">
-							<img src="./assets/images/tai-lieu/1.jpg" class="border"
-							     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-							<span class="document-excel">
+				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
+					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
+						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+							<div class="card-header border-bottom-0 bg-white text-center position-relative">
+								<img src="./assets/images/tai-lieu/1.jpg" class="border"
+								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
+								<span class="document-excel">
 									<i class="fal fa-file-excel"></i>
 								</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
+								<div class="card-title">
+									Bảng công thức tích phân - đạo hàm - Mũ - logarit
+								</div>
+							</a>
+							<a class="d-inline-block" href="trang-ca-nhan.html">
+								<div class="card-text text-09">
+									Fritjof Capra
+								</div>
+							</a>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+								<li>
+									<i class="fal fa-file-alt"></i> 6
+								</li>
+								<li>
+									<i class="fal fa-eye"></i> 46,616
+								</li>
+								<li>
+									<i class="fal fa-arrow-to-bottom"></i> 836
+								</li>
+							</ul>
 						</div>
-					</a>
-					<div class="card-body">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-title">
-								Bảng công thức tích phân - đạo hàm - Mũ - logarit
-							</div>
-						</a>
-						<a class="d-inline-block" href="trang-ca-nhan.html">
-							<div class="card-text text-09">
-								Fritjof Capra
-							</div>
-						</a>
-						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-							<li>
-								<i class="fal fa-file-alt"></i> 6
-							</li>
-							<li>
-								<i class="fal fa-eye"></i> 46,616
-							</li>
-							<li>
-								<i class="fal fa-arrow-to-bottom"></i> 836
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="wrapper-category bg-white py-5">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="heading h4 mb-4 text-dark font-weight-bolder">
-					Tài liệu chung
-				</div>
-			</div>
-		</div>
-		<div class="row row-10">
-			<div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-				<div class="card rounded-0 position card-category">
-					<div class="card-header border-bottom-0 text-white font-weight-bold"
-					     style="background-image: url('./assets/images/category-bg.png')">
-						Ngoại ngữ
-					</div>
-					<div class="card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-excel">
-											<i class="fal fa-file-excel"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-				<div class="card rounded-0 position card-category">
-					<div class="card-header border-bottom-0 text-white font-weight-bold"
-					     style="background-image: url('./assets/images/category-bg.png')">
-						Giáo Dục - Đào Tạo
-					</div>
-					<div class="card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-excel">
-											<i class="fal fa-file-excel"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-				<div class="card rounded-0 position card-category">
-					<div class="card-header border-bottom-0 text-white font-weight-bold"
-					     style="background-image: url('./assets/images/category-bg.png')">
-						Kỹ Thuật - Công Nghệ
-					</div>
-					<div class="card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-excel">
-											<i class="fal fa-file-excel"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-				<div class="card rounded-0 position card-category">
-					<div class="card-header border-bottom-0 text-white font-weight-bold"
-					     style="background-image: url('./assets/images/category-bg.png')">
-						Công Nghệ Thông Tin
-					</div>
-					<div class="card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-excel">
-											<i class="fal fa-file-excel"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item p-0">
-								<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-									Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-								</a>
-								<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-									<li>
-										<i class="fal fa-file-alt"></i> 2
-									</li>
-									<li>
-										<i class="fal fa-eye"></i> 316,644
-									</li>
-									<li>
-										<i class="fal fa-arrow-to-bottom"></i> 10,117
-									</li>
-								</ul>
-							</li>
-						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+	<div class="wrapper-category bg-white py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="heading h4 mb-4 text-dark font-weight-bolder">
+						Tài liệu chung
+					</div>
+				</div>
+			</div>
+			<div class="row row-10">
+				<div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
+					<div class="card rounded-0 position card-category">
+						<div class="card-header border-bottom-0 text-white font-weight-bold"
+						     style="background-image: url('./assets/images/category-bg.png')">
+							Ngoại ngữ
+						</div>
+						<div class="card-body">
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-ppt">
+											<i class="fal fa-file-powerpoint"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-excel">
+											<i class="fal fa-file-excel"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-ppt">
+											<i class="fal fa-file-powerpoint"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
+					<div class="card rounded-0 position card-category">
+						<div class="card-header border-bottom-0 text-white font-weight-bold"
+						     style="background-image: url('./assets/images/category-bg.png')">
+							Giáo Dục - Đào Tạo
+						</div>
+						<div class="card-body">
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-ppt">
+											<i class="fal fa-file-powerpoint"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-excel">
+											<i class="fal fa-file-excel"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-ppt">
+											<i class="fal fa-file-powerpoint"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
+					<div class="card rounded-0 position card-category">
+						<div class="card-header border-bottom-0 text-white font-weight-bold"
+						     style="background-image: url('./assets/images/category-bg.png')">
+							Kỹ Thuật - Công Nghệ
+						</div>
+						<div class="card-body">
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-ppt">
+											<i class="fal fa-file-powerpoint"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-excel">
+											<i class="fal fa-file-excel"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-ppt">
+											<i class="fal fa-file-powerpoint"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
+					<div class="card rounded-0 position card-category">
+						<div class="card-header border-bottom-0 text-white font-weight-bold"
+						     style="background-image: url('./assets/images/category-bg.png')">
+							Công Nghệ Thông Tin
+						</div>
+						<div class="card-body">
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-ppt">
+											<i class="fal fa-file-powerpoint"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-excel">
+											<i class="fal fa-file-excel"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-ppt">
+											<i class="fal fa-file-powerpoint"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+								<li class="list-group-item p-0">
+									<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+									</a>
+									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+										<li>
+											<i class="fal fa-file-alt"></i> 2
+										</li>
+										<li>
+											<i class="fal fa-eye"></i> 316,644
+										</li>
+										<li>
+											<i class="fal fa-arrow-to-bottom"></i> 10,117
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <footer>
