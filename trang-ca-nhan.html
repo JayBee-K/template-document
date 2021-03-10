@@ -1,0 +1,2646 @@
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+	
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	
+	<meta name="twitter:card" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:creator" content="">
+	
+	<title>Home - Trang cá nhân Document</title>
+	
+	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/select2/select2.min.css">
+	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
+	<link rel="stylesheet" href="./assets/plugin/slick/slick.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/plugin/animate.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div class="popup-theme">
+	<div class="modal fade" id="modalLogin" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content rounded-0 border-0">
+				<div class="modal-header text-center p-0">
+					<h5 class="modal-title d-block py-3 w-100 font-weight-bold text-center">Đăng nhập tài khoản</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form class="form-effect" action="">
+						<div class="group-effect">
+							<input type="email" id="emailLogin" class="input-effect">
+							<label class="label-effect" for="emailLogin">
+								<i class="fas fa-envelope"></i>
+								<span>Email</span>
+							</label>
+						</div>
+						<div class="group-effect">
+							<input type="password" tabindex="1" name="" id="passwordLogin" class="input-effect"
+							       autocomplete="off" required="">
+							<label class="label-effect" for="passwordLogin">
+								<i class="fas fa-lock"></i>
+								<span>Mật khẩu</span>
+							</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="saveLogin">
+							<label class="custom-control-label" for="saveLogin">Nhớ mật khẩu</label>
+						</div>
+						<div class="divider"></div>
+						<div class="form-group">
+							<div class="row row-5">
+								<div class="col-md-6 mb-3 mb-md-0">
+									<a href="javascript:void(0)" class="btn btn-facebook">
+										<i class="fab fa-facebook-f"></i>
+										<span>Đăng nhập bằng Facebook</span>
+									</a>
+								</div>
+								<div class="col-md-6">
+									<a href="javascript:void(0)" class="btn btn-google">
+										<i class="fab fa-google"></i>
+										<span>Đăng nhập bằng Google</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
+							<button type="submit" class="btn btn-primary btn-customize">
+								<span>
+									Đăng nhập
+									<i class="fas fa-sign-in-alt"></i>
+								</span>
+							</button>
+							<a href="#modalForgot" data-toggle="modal" data-dismiss="modal"
+							   class="d-inline-block mt-3 text-muted text-09">Quên
+								mật khẩu</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRegister" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content rounded-0 border-0">
+				<div class="modal-header text-center p-0">
+					<h5 class="modal-title d-block py-3 w-100 font-weight-bold text-center">Đăng ký tài khoản</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form class="form-effect" action="">
+						<div class="group-effect">
+							<input type="email" id="emailRegister" class="input-effect">
+							<label class="label-effect" for="emailRegister">
+								<i class="fas fa-envelope"></i>
+								<span>Email</span>
+							</label>
+						</div>
+						<div class="group-effect">
+							<input type="password" tabindex="1" name="" id="passwordRegister" class="input-effect"
+							       autocomplete="off" required="">
+							<label class="label-effect" for="passwordRegister">
+								<i class="fas fa-lock"></i>
+								<span>Mật khẩu</span>
+							</label>
+						</div>
+						<div class="group-effect">
+							<input type="password" tabindex="1" name="" id="passwordConfirmRegister"
+							       class="input-effect"
+							       autocomplete="off" required="">
+							<label class="label-effect" for="passwordConfirmRegister">
+								<i class="fas fa-lock"></i>
+								<span>Nhập lại mật khẩu</span>
+							</label>
+						</div>
+						<div class="row row-5">
+							<div class="col-md-6">
+								<div class="group-effect">
+									<input type="text" id="fullnameRegister" class="input-effect">
+									<label class="label-effect" for="fullnameRegister">
+										<i class="fas fa-address-card"></i>
+										<span>Họ & tên</span>
+									</label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="group-effect">
+									<input type="tel" id="phoneRegister" class="input-effect">
+									<label class="label-effect" for="phoneRegister">
+										<i class="fas fa-phone-alt"></i>
+										<span>Số điện thoại</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
+							<button type="submit" class="btn btn-primary btn-customize">
+								<span>
+									Đăng ký
+									<i class="fas fa-sign-out-alt"></i>
+								</span>
+							</button>
+						</div>
+						<div class="divider"></div>
+						<p class="text-muted text-09 text-center">
+							Bằng cách nhập vào Đăng ký, bạn đồng ý với <a href="#" class="text-underline color-main">Điều
+							khoản</a> và <a href="#" class="text-underline color-main">Chính sách bảo mật thông tin</a>
+							của chúng tôi
+						</p>
+						<p class="text-muted text-09 text-center mb-0">
+							Đã có tài khoản? <a href="#modalLogin" class="text-underline color-main" data-toggle="modal"
+							                    data-dismiss="modal">Đăng nhập</a>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalForgot" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content rounded-0 border-0">
+				<div class="modal-header text-center p-0">
+					<h5 class="modal-title d-block py-3 w-100 font-weight-bold text-center">Quên mật khẩu</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form class="form-effect" action="">
+						<div class="group-effect">
+							<input type="email" id="emailForgot" class="input-effect">
+							<label class="label-effect" for="emailForgot">
+								<i class="fas fa-envelope"></i>
+								<span>Email</span>
+							</label>
+						</div>
+						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
+							<button type="submit" class="btn btn-primary btn-customize">
+								<span>
+									Gửi yêu cầu
+									<i class="fas fa-paper-plane"></i>
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-price" id="modalPrice" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content rounded-0 border-0">
+				<div class="user-info">
+					<div class="user-left">
+						<div class="user-image">
+							<a href="#">
+								<img src="./assets/images/user.png" alt="">
+							</a>
+						</div>
+						<div class="user-content">
+							<h6 class="mb-1 text-main font-weight-bold">
+								Hoàng Tấn
+							</h6>
+							<p class="mb-1 text-muted text-09">
+								thtan0407@gmail.com
+							</p>
+							<a href="#" class="d-inline-block text-main font-weight-bold text-09">
+								Lịch sử giao dịch
+							</a>
+						</div>
+					</div>
+					<div class="user-right">
+						<p class="mb-1 text-muted">Tài khoản: <span class="color-main">0 <sup>đ</sup></span></p>
+						<p class="mb-0 text-muted">Doanh thu: <span class="color-main">0 <sup>đ</sup></span></p>
+					</div>
+				</div>
+				<div class="modal-header rounded-0 p-0">
+					<h5 class="modal-title d-block py-3 px-4 w-100 font-weight-bold">Nạp tiền vào tài khoản</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="modal-tab">
+						<ul class="nav nav-tabs border-bottom-0">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link active" data-toggle="tab"
+								   href="#qrcode" type="button">
+									<img src="./assets/images/qr-code.png">
+									<p class="mb-0">QR code</p>
+								</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" data-toggle="tab"
+								   href="#momo"
+								   type="button">
+									<img src="./assets/images/momo.png">
+									<p class="mb-0">Ví momo</p>
+								</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" data-toggle="tab"
+								   href="#atm"
+								   type="button">
+									<img src="./assets/images/atm.png">
+									<p class="mb-0">Thẻ ATM online</p>
+								</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" data-toggle="tab"
+								   href="#card"
+								   type="button">
+									<img src="./assets/images/card.png">
+									<p class="mb-0">Thẻ điện thoại</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-content mt-3">
+						<div class="tab-pane fade show active" id="qrcode">
+							<div class="py-4 px-lg-3">
+								<div class="row">
+									<div class="col-lg-6">
+										<form class="form-effect my-0 pb-0" action="">
+											<div class="group-effect">
+												<select name="" class="input-effect" id="money">
+													
+													<option value=""></option>
+													<option value="50000">50.000 đ</option>
+													<option value="100000">100.000 đ</option>
+													<option value="150000">150.000 đ</option>
+													<option value="200000">200.000 đ</option>
+												</select>
+												<label class="label-effect" for="money">
+													<i class="fas fa-money-bill"></i>
+													<span>Lựa chọn số tiền cần nạp</span>
+												</label>
+											</div>
+											<div class="group-effect">
+												<input type="email" id="phonePrice" class="input-effect">
+												<label class="label-effect" for="phonePrice">
+													<i class="fas fa-phone-alt"></i>
+													<span>Số điện thoại</span>
+												</label>
+											</div>
+											<div class="form-button">
+												<button type="submit"
+												        class="btn btn-primary btn-customize w-100 py-2">
+														<span>
+															Nạp tiền
+														</span>
+												</button>
+											</div>
+											<div class="form-desc mt-3">
+												<ul class="pl-3 mb-0">
+													<li class="mb-2">
+														Thanh toán bằng QRCode trên ứng dụng Mobile Banking của các
+														ngân
+														hàng
+													</li>
+													<li>
+														Nếu gặp lỗi thì
+														<a href="#" class="color-main font-weight-bold">Click vào
+															đây</a>
+													</li>
+												</ul>
+											</div>
+										</form>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-desc px-3 px-lg-0 mt-4 mt-lg-0">
+											<ul class="list-unstyled mb-0">
+												<li class="mb-3">
+													<i class="fas fa-check"></i>
+													Thanh toán bằng QR code bảo mật tiện lợi hơn so với ATM Online
+												</li>
+												<li class="mb-3">
+													<i class="fas fa-check"></i>
+													Sử dụng QR Code trên ứng dụng Mobile Banking của các ngân hàng
+												</li>
+												<li class="mb-3">
+													<i class="fas fa-hand-point-right"></i>
+													Xem hướng dẫn quét QR với <a href=""
+													                             class="color-main text-uppercase">AGRIBANK</a>
+												</li>
+												<li class="mb-3">
+													<i class="fas fa-hand-point-right"></i>
+													Xem hướng dẫn quét QR với <a href=""
+													                             class="color-main text-uppercase">VIETINBANK</a>
+												</li>
+												<li class="mb-3">
+													<i class="fas fa-hand-point-right"></i>
+													Xem hướng dẫn quét QR với <a href=""
+													                             class="color-main text-uppercase">VIETCOMBANK</a>
+												</li>
+												<li class="mb-3">
+													<i class="fas fa-hand-point-right"></i>
+													Xem hướng dẫn quét QR với <a href=""
+													                             class="color-main text-uppercase">BIDV</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="momo">
+							<div class="py-4 px-lg-3">
+								<form class="form-effect my-0 pb-0" action="">
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="group-effect">
+												<select name="" class="input-effect" id="money">
+													
+													<option value=""></option>
+													<option value="50000">50.000 đ</option>
+													<option value="100000">100.000 đ</option>
+													<option value="150000">150.000 đ</option>
+													<option value="200000">200.000 đ</option>
+												</select>
+												<label class="label-effect" for="money">
+													<i class="fas fa-money-bill"></i>
+													<span>Lựa chọn số tiền cần nạp</span>
+												</label>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="group-effect">
+												<input type="email" id="phonePrice" class="input-effect">
+												<label class="label-effect" for="phonePrice">
+													<i class="fas fa-phone-alt"></i>
+													<span>Số điện thoại</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-button mt-0">
+										<button type="submit"
+										        class="btn btn-primary btn-customize w-100 py-2">
+												<span>
+													Nạp tiền
+												</span>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="atm">
+							<div class="py-4 px-lg-3">
+								<div class="row">
+									<div class="col-lg-6">
+										<form class="form-effect my-0 pb-0" action="">
+											<div class="group-effect">
+												<select name="" class="input-effect" id="bank">
+													
+													<option value=""></option>
+													<option value="1">Vietcombank (VCB)</option>
+													<option value="2">BIDV</option>
+													<option value="3">Agribank</option>
+													<option value="4">Sacombank</option>
+													<option value="1">Vietcombank (VCB)</option>
+													<option value="2">BIDV</option>
+													<option value="3">Agribank</option>
+													<option value="4">Sacombank</option>
+													<option value="1">Vietcombank (VCB)</option>
+													<option value="2">BIDV</option>
+													<option value="3">Agribank</option>
+													<option value="4">Sacombank</option>
+												</select>
+												<label class="label-effect" for="bank">
+													<i class="fas fa-university"></i>
+													<span>Lựa chọn ngân hàng</span>
+												</label>
+											</div>
+											<div class="group-effect">
+												<select name="" class="input-effect" id="money">
+													
+													<option value=""></option>
+													<option value="50000">50.000 đ</option>
+													<option value="100000">100.000 đ</option>
+													<option value="150000">150.000 đ</option>
+													<option value="200000">200.000 đ</option>
+												</select>
+												<label class="label-effect" for="money">
+													<i class="fas fa-money-bill"></i>
+													<span>Lựa chọn số tiền cần nạp</span>
+												</label>
+											</div>
+											<div class="group-effect">
+												<input type="email" id="phonePrice" class="input-effect">
+												<label class="label-effect" for="phonePrice">
+													<i class="fas fa-phone-alt"></i>
+													<span>Số điện thoại</span>
+												</label>
+											</div>
+											<div class="form-button">
+												<button type="submit"
+												        class="btn btn-primary btn-customize w-100 py-2">
+														<span>
+															Nạp tiền
+														</span>
+												</button>
+											</div>
+										</form>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-desc px-3 px-lg-0 mt-4 mt-lg-0">
+											<ul class="list-unstyled mb-0">
+												<li class="mb-3">
+													<i class="fas fa-check"></i>
+													Nạp sai 5 lần liên tiếp, tài khoản của bạn không thể sử dụng
+													hình thức nạp trong 24h
+												</li>
+												<li class="mb-3">
+													<i class="fas fa-check"></i>
+													Nếu gặp lỗi thì <a href="">Click vào đây</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="card">
+							<div class="py-4 px-lg-3">
+								<div class="row">
+									<div class="col-lg-6">
+										<form class="form-effect my-0 pb-0" action="">
+											<div class="group-effect">
+												<select name="" class="input-effect" id="money">
+													
+													<option value=""></option>
+													<option value="50000">50.000 đ</option>
+													<option value="100000">100.000 đ</option>
+													<option value="150000">150.000 đ</option>
+													<option value="200000">200.000 đ</option>
+												</select>
+												<label class="label-effect" for="money">
+													<i class="fas fa-money-bill"></i>
+													<span>Lựa chọn số tiền cần nạp</span>
+												</label>
+											</div>
+											<div class="group-effect">
+												<input type="email" id="seriPrice" class="input-effect">
+												<label class="label-effect" for="seriPrice">
+													<i class="fas fa-phone-alt"></i>
+													<span>Mã số thẻ</span>
+												</label>
+											</div>
+											<div class="group-effect">
+												<input type="email" id="seriPrice" class="input-effect">
+												<label class="label-effect" for="seriPrice">
+													<i class="fas fa-phone-alt"></i>
+													<span>Seri thẻ</span>
+												</label>
+											</div>
+											<div class="group-effect">
+												<input type="email" id="phonePrice" class="input-effect">
+												<label class="label-effect" for="phonePrice">
+													<i class="fas fa-phone-alt"></i>
+													<span>Số điện thoại</span>
+												</label>
+											</div>
+											<div class="form-button">
+												<button type="submit"
+												        class="btn btn-primary btn-customize w-100 py-2">
+														<span>
+															Nạp tiền
+														</span>
+												</button>
+											</div>
+											<div class="form-desc mt-3">
+												<ul class="pl-3 mb-0">
+													<li class="mb-2">
+														Phí nạp thẻ <span class="text-danger">35%</span> cho nhà
+														mạng. <span class="color-main font-italic">(Ví dụ: Nạp thẻ 20.000 bạn sẽ nhận được 13.000 vào tài khoản)</span>
+													</li>
+													<li>
+														Nạp sai 5 lần liên tiếp, tài khoản của bạn không thể sử dụng
+														hình thức nạp trong 24h.
+													</li>
+													<li>
+														Mua thẻ nạp online
+														<a href="#" class="color-main font-weight-bold">tại đây</a>
+													</li>
+													<li>
+														Nếu gặp lỗi thì
+														<a href="#" class="color-main font-weight-bold">Click vào
+															đây</a> hoặc liên hệ <a
+															href="mailto:thtan0407@gmail.com"
+															class="color-main font-weight-bold">thtan0407@gmail.com</a>
+													</li>
+												</ul>
+											</div>
+										</form>
+									</div>
+									<div class="col-lg-6">
+										<div class="p-3 p-lg-0">
+											<img src="./assets/images/hd_mobile.png" alt="" class="w-100">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-collection" id="modalCollection" tabindex="-1">
+		<div class="modal-dialog modal-zoom">
+			<div class="modal-content rounded-0 border-0">
+				<div class="modal-header rounded-0 p-0">
+					<div class="modal-tab">
+						<ul class="nav nav-tabs border-bottom-0" id="tab-booking">
+							<li class="nav-item">
+								<a class="nav-link active mb-0 border-0" data-toggle="tab" href="#listCollection">
+								<span class="font-weight-bold d-block">
+									<i class="fal fa-list mr-1"></i>
+									Danh sách
+								</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link mb-0 border-0" data-toggle="tab" href="#createCollection">
+								<span class="font-weight-bold d-block">
+									<i class="fal fa-plus mr-1"></i>
+									Thêm mới
+								</span>
+								</a>
+							</li>
+						</ul>
+						<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+				</div>
+				<div class="modal-body p-3">
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="listCollection">
+							<h5 class="modal-title d-block w-100 font-weight-bold">Danh sách bộ sưu tập</h5>
+							<div class="collapse-main">
+								<ul class="list-unstyled mb-0" id="collapseCollection">
+									<li>
+										<a href="#collection01" data-toggle="collapse">
+											Bộ sưu tập số 01
+											<i class="fal fa-plus"></i>
+										</a>
+										<ul class="collapse list-group list-group-flush" id="collection01"
+										    data-parent="#collapseCollection">
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+											<span class="document-ppt">
+												<i class="fal fa-file-powerpoint"></i>
+											</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-excel">
+											<i class="fal fa-file-excel"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-ppt">
+											<i class="fal fa-file-powerpoint"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#collection02" data-toggle="collapse">
+											Bộ sưu tập số 02
+											<i class="fal fa-plus"></i>
+										</a>
+										<ul class="collapse list-group list-group-flush" id="collection02"
+										    data-parent="#collapseCollection">
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+											<span class="document-ppt">
+												<i class="fal fa-file-powerpoint"></i>
+											</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#collection03" data-toggle="collapse">
+											Bộ sưu tập số 03
+											<i class="fal fa-plus"></i>
+										</a>
+										<ul class="collapse list-group list-group-flush" id="collection03"
+										    data-parent="#collapseCollection">
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+											<span class="document-ppt">
+												<i class="fal fa-file-powerpoint"></i>
+											</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+											<span class="document-ppt">
+												<i class="fal fa-file-powerpoint"></i>
+											</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-excel">
+											<i class="fal fa-file-excel"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-ppt">
+											<i class="fal fa-file-powerpoint"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-pdf">
+											<i class="fal fa-file-pdf"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item">
+												<a href="chi-tiet-tai-lieu.html">
+										<span class="document-word">
+											<i class="fal fa-file-word"></i>
+										</span>
+													Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
+												</a>
+												<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
+													<li>
+														<i class="fal fa-file-alt"></i> 2
+													</li>
+													<li>
+														<i class="fal fa-eye"></i> 316,644
+													</li>
+													<li>
+														<i class="fal fa-arrow-to-bottom"></i> 10,117
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="createCollection">
+							<h5 class="modal-title d-block w-100 font-weight-bold">Thêm vào bộ sưu tập</h5>
+							<form class="form-effect mt-3 p-0" action="">
+								<div class="group-effect">
+									<input type="text" id="nameCollection" class="input-effect">
+									<label class="label-effect" for="nameCollection">
+										<i class="fas fa-font-case"></i>
+										<span>Tiêu đề</span>
+									</label>
+								</div>
+								<div class="group-effect group-textarea">
+									<textarea id="descCollection" class="input-effect" rows="5"></textarea>
+									<label class="label-effect" for="descCollection">
+										<i class="fas fa-align-left"></i>
+										<span>Mô tả</span>
+									</label>
+								</div>
+								<div class="group-effect group-select2">
+									<select name="keywordsCollection" id="theme-sel2" class="theme-sel2 input-effect"
+									        multiple>
+										<option value="">Tháng 1 năm 2021</option>
+										<option value="">Tháng 2 năm 2021</option>
+										<option value="">Tháng 3 năm 2021</option>
+										<option value="">Tháng 4 năm 2021</option>
+										<option value="">Tháng 5 năm 2021</option>
+										<option value="">Tháng 6 năm 2021</option>
+										<option value="">Tháng 7 năm 2021</option>
+										<option value="">Tháng 8 năm 2021</option>
+										<option value="">Tháng 9 năm 2021</option>
+										<option value="">Tháng 10 năm 2021</option>
+										<option value="">Tháng 11 năm 2021</option>
+										<option value="">Tháng 12 năm 2021</option>
+									</select>
+									<label class="label-effect" for="descCollection">
+										<i class="fas fa-tag fa-rotate-90"></i>
+										<span>Mô tả</span>
+									</label>
+								</div>
+								<div class="form-button">
+									<button type="submit" class="btn btn-primary btn-customize py-2">
+										<span>
+											<i class="fal fa-plus mr-1"></i>Thêm mới
+										</span>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-message" id="modalMessage" tabindex="-1">
+		<div class="modal-dialog modal-zoom">
+			<div class="modal-content rounded-0 border-0">
+				<div class="modal-header rounded-0 p-0"><h5
+						class="modal-title d-block py-3 w-100 font-weight-bold text-center">Gửi tin nhắn</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body p-3">
+					<form class="form-effect mt-3 p-0" action="">
+						<div class="group-effect">
+							<input type="text" id="nameMessage" class="input-effect valid" value="Hoàng Tấn" readonly>
+							<label class="label-effect" for="nameMessage">
+								<i class="fas fa-user"></i>
+								<span>Gửi tới</span>
+							</label>
+						</div>
+						<div class="group-effect">
+							<input type="text" id="titleMessage" class="input-effect">
+							<label class="label-effect" for="titleMessage">
+								<i class="fas fa-font-case"></i>
+								<span>Tiêu đề</span>
+							</label>
+						</div>
+						<div class="group-effect group-textarea">
+							<textarea id="descMessage" class="input-effect" rows="5"></textarea>
+							<label class="label-effect" for="descMessage">
+								<i class="fas fa-comments"></i>
+								<span>Nội dung tin nhắn</span>
+							</label>
+						</div>
+						<div class="form-button">
+							<button type="submit" class="btn btn-primary btn-customize py-2">
+								<span>
+									Gửi
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-report" id="modalReport" tabindex="-1">
+		<div class="modal-dialog modal-zoom">
+			<div class="modal-content rounded-0 border-0">
+				<div class="modal-header rounded-0 p-0">
+					<h5 class="modal-title d-block py-3 w-100 font-weight-bold text-center">Báo cáo tài liệu</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body p-3">
+					<h5 class="h6 d-block py-3 w-100 font-weight-bold">Bạn hãy chắc chắn khi báo xấu tài liệu này</h5>
+					<form class="form-effect mt-3 p-0" action="">
+						<div class="custom-control custom-radio">
+							<input type="radio" id="report01" name="report" class="custom-control-input">
+							<label class="custom-control-label" for="report01">Tài liệu bị lỗi font</label>
+						</div>
+						<div class="custom-control custom-radio">
+							<input type="radio" id="report02" name="report" class="custom-control-input">
+							<label class="custom-control-label" for="report02">Tài liệu bị cắt, thiếu nội dung</label>
+						</div>
+						<div class="custom-control custom-radio">
+							<input type="radio" id="report03" name="report" class="custom-control-input">
+							<label class="custom-control-label" for="report03">Tài liệu spam, quảng cáo</label>
+						</div>
+						<div class="custom-control custom-radio">
+							<input type="radio" id="report04" name="report" class="custom-control-input">
+							<label class="custom-control-label" for="report04">Tài liệu không phải là Tiếng Việt & tiếng
+								Anh</label>
+						</div>
+						<div class="custom-control custom-radio">
+							<input type="radio" id="report05" name="report" class="custom-control-input">
+							<label class="custom-control-label" for="report05">Tài liệu vi phạm bản quyền</label>
+						</div>
+						<div class="custom-control custom-radio">
+							<input type="radio" id="report06" name="report" class="custom-control-input">
+							<label class="custom-control-label" for="report06">Tài liệu đã trùng với tài liệu đã có trên
+								website</label>
+						</div>
+						<div class="form-button">
+							<button type="submit" class="btn btn-primary btn-customize py-2">
+								<span>
+									Gửi
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header class="position-relative shadow-sm bg-white">
+	<div class="header-overlay"></div>
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<div class="row align-items-center justify-content-lg-start">
+					<div class="col-lg-4">
+						<div class="d-flex align-items-center justify-content-start">
+							<div class="header-logo">
+								<a href="index.html" class="d-inline-block">
+									<img class="w-100" src="./assets/images/logo.png"
+									     alt="Template Document 123doc.net">
+								</a>
+							</div>
+							<div class="header-navigation">
+								<a href="javascript:void(0)"><i class="fas fa-th"></i></a>
+								<ul class="list-unstyled mb-0" id="hasMenu">
+									<li class="d-block d-lg-none border-bottom">
+										<div class="row row-10">
+											<div class="col-6 mb-3">
+												<a href="#modalPrice" data-toggle="modal"
+												   class="btn btn-warning btn-customize w-100">
+													Nạp tiền
+												</a>
+											</div>
+											<div class="col-6 mb-3">
+												<a href="/upload-file.html" class="btn btn-primary btn-customize w-100">
+													Tải lên
+												</a>
+											</div>
+											<div class="col-6 d-none">
+												<a href="#modalRegister" data-toggle="modal"
+												   class="btn btn-outline-light w-100">
+													Đăng ký
+												</a>
+											</div>
+											<div class="col-6 d-none">
+												<a href="#modalLogin" data-toggle="modal"
+												   class="btn btn-outline-light w-100">
+													Đăng nhập
+												</a>
+											</div>
+											<div class="col-12 mb-2">
+												<div class="login-inner d-flex align-items-center justify-content-between">
+													<div class="login-info w-100 d-flex align-items-start justify-content-start">
+														<a href="javascript:void(0)">
+															<!-- Sử dụng hình hoặc icon đều được -->
+															<!--															<img src="./assets/images/user.png" alt="">-->
+															<span class="fal fa-user"></span>
+														</a>
+														<div class="login-info-right w-100 ml-3">
+															<a href="javascript:void(0)">
+																<b class="text-dark">Hoàng Tấn</b>
+															</a>
+															<p class="mb-1">
+																<span>Tải lên:</span>
+																<b class="text-dark">0 tài liệu</b>
+															</p>
+															<p class="mb-1">
+																<span>Doanh thu:</span>
+																<b class="text-dark">0 <sup>đ</sup></b>
+															</p>
+															<p class="mb-1">
+																<span>Số dư:</span>
+																<b class="text-dark">0 <sup>đ</sup></b>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 mb-2">
+												<a href="#"
+												   class="btn btn-outline-light w-100">
+													Thông báo (0)
+												</a>
+											</div>
+											<div class="col-12">
+												<a href="#"
+												   class="btn btn-outline-light w-100">
+													Đăng xuất
+												</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="">
+											<span>
+												Luận văn - báo cáo
+											</span>
+											<i class="fal fa-angle-right"></i>
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="">
+											<span>
+												Kỹ năng mềm
+											</span>
+											<i class="fal fa-angle-right"></i>
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="">
+											<span>
+												Mẫu slide
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span>
+												Kinh doanh - tiếp thị
+											</span>
+											<i class="fal fa-angle-right"></i>
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="">
+											<span>
+												Kinh tế - quản lí thị trường
+											</span>
+											<i class="fal fa-angle-right"></i>
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="">
+											<span>
+												Tài chính - ngân hàng
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span>
+												Kinh doanh - tiếp thị
+											</span>
+											<i class="fal fa-angle-right"></i>
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="">
+											<span>
+												Kinh tế - quản lí thị trường
+											</span>
+											<i class="fal fa-angle-right"></i>
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+											<li>
+												<a href="">
+													Sub menu 01
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="">
+											<span>
+												Tài chính - ngân hàng
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="header-mobilesearch d-block d-lg-none">
+								<a href="javascript:void(0)">
+									<i class="fal fa-search"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="header-form">
+							<form action="" id="js-form_search" class="mb-0">
+								<div class="input-group mb-0">
+									<div class="input-group-prepend">
+										<select name="" id="" class="form-control">
+											<option value="1" selected>Tài liệu</option>
+											<option value="2">Bộ sưu tập</option>
+											<option value="3">Thành viên</option>
+										</select>
+									</div>
+									<input type="text" class="form-control" name="" id="" placeholder="Tìm kiếm...">
+									<button type="submit"><i class="fal fa-search"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 d-none d-lg-block">
+				<div class="d-flex align-items-center justify-content-lg-end">
+					<div class="d-flex align-items-center justify-content-lg-end">
+						<a href="#modalPrice" data-toggle="modal" class="btn btn-warning btn-customize">
+							Nạp tiền
+						</a>
+						<a href="/upload-file.html" class="btn btn-primary btn-customize">
+							Tải lên
+						</a>
+					</div>
+					<div class="header-link">
+						<a href="/gioi-thieu.html">
+							<i class="fal fa-star"></i>
+						</a>
+					</div>
+					<div class="d-flex align-items-center justify-content-lg-end">
+						<a href="#modalRegister" data-toggle="modal" class="d-none btn btn-outline-light">
+							Đăng ký
+						</a>
+						<a href="#modalLogin" data-toggle="modal" class="d-none btn btn-outline-light">
+							Đăng nhập
+						</a>
+						<div class="login-inner d-flex align-items-center justify-content-between">
+							<div class="login-info mr-3">
+								<a href="javascript:void(0)" class="d-flex align-items-center justify-content-start">
+									<!-- Sử dụng hình hoặc icon đều được -->
+									<img src="./assets/images/user.png" alt="">
+									<!--<span class="fal fa-user"></span>-->
+									<b class="text-09 text-dark ml-2">Hoàng Tấn</b>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)">
+											Thông tin tài khoản
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											Hòm thư
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											Quản lý tài liệu
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											Doanh thu <span>0 <sup>đ</sup></span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											Số dư <span>0 <sup>đ</sup></span>
+										</a>
+									</li>
+									<li>
+										<a href="#modalPrice" data-toggle="modal">
+											Nạp tiền
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											Chuyển tiền
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span>
+												Đăng xuất
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="login-notification">
+								<i class="fal fa-bell"></i>
+								<div class="card card-notification">
+									<div class="card-header py-2">
+										<div class="card-title mb-0 font-weight-bold text-dark h6">Bạn có
+											<span>0</span> thông báo
+										</div>
+									</div>
+									<div class="card-body p-2">
+										<ul class="list-unstyled mb-0">
+											<li class="text-muted text-center text-09 no-notification">Chưa có thông báo
+												mới
+											</li>
+											<li>
+												<div class="image">
+													<a href="#">
+														<i class="fal fa-bell"></i>
+													</a>
+												</div>
+												<div class="content">
+													<a href="#">
+														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
+													</a>
+												</div>
+												<div class="action">
+													<a href="javascript:void(0)" class="js_remove-notification">
+														<i class="fal fa-times"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="image">
+													<a href="#">
+														<i class="fal fa-bell"></i>
+													</a>
+												</div>
+												<div class="content">
+													<a href="#">
+														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
+													</a>
+												</div>
+												<div class="action">
+													<a href="javascript:void(0)" class="js_remove-notification">
+														<i class="fal fa-times"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="image">
+													<a href="#">
+														<i class="fal fa-bell"></i>
+													</a>
+												</div>
+												<div class="content">
+													<a href="#">
+														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
+													</a>
+												</div>
+												<div class="action">
+													<a href="javascript:void(0)" class="js_remove-notification">
+														<i class="fal fa-times"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="image">
+													<a href="#">
+														<i class="fal fa-bell"></i>
+													</a>
+												</div>
+												<div class="content">
+													<a href="#">
+														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
+													</a>
+												</div>
+												<div class="action">
+													<a href="javascript:void(0)" class="js_remove-notification">
+														<i class="fal fa-times"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="image">
+													<a href="#">
+														<i class="fal fa-bell"></i>
+													</a>
+												</div>
+												<div class="content">
+													<a href="#">
+														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
+													</a>
+												</div>
+												<div class="action">
+													<a href="javascript:void(0)" class="js_remove-notification">
+														<i class="fal fa-times"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="image">
+													<a href="#">
+														<i class="fal fa-bell"></i>
+													</a>
+												</div>
+												<div class="content">
+													<a href="#">
+														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
+													</a>
+												</div>
+												<div class="action">
+													<a href="javascript:void(0)" class="js_remove-notification">
+														<i class="fal fa-times"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="image">
+													<a href="#">
+														<i class="fal fa-bell"></i>
+													</a>
+												</div>
+												<div class="content">
+													<a href="#">
+														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
+													</a>
+												</div>
+												<div class="action">
+													<a href="javascript:void(0)" class="js_remove-notification">
+														<i class="fal fa-times"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="image">
+													<a href="#">
+														<i class="fal fa-bell"></i>
+													</a>
+												</div>
+												<div class="content">
+													<a href="#">
+														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
+													</a>
+												</div>
+												<div class="action">
+													<a href="javascript:void(0)" class="js_remove-notification">
+														<i class="fal fa-times"></i>
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="card-footer text-center">
+										<a href="thong-bao.html" class="color-main text-09">Xem tất cả thông báo</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="main">
+	<div class="page-profile">
+		<div class="detail-bg"
+		     style="background-image: url('./assets/images/category-bg.png')">
+			<div class="detail-bg--info">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="info--inner">
+								<div class="info-image">
+									<img src="./assets/images/user.png"
+									     alt="">
+									<a href="javascript:void(0)" class="changeAvatar">
+										<i class="fas fa-camera"></i>
+										<input type="file">
+									</a>
+								</div>
+								<div class="info-content w-100">
+									<div class="info-name">
+										Triệu Hoàng Tấn
+									</div>
+									<div class="d-flex align-items-center justify-content-center justify-content-md-start w-100 pb-md-2">
+										<div class="info-item mr-3 mr-md-5">
+											<a href="tel:0333851195"
+											   class="d-flex align-items-center justify-content-start py-2">
+												<i class="fas fa-phone-alt"></i>
+												0333.851.195 </a>
+										</div>
+										<div class="info-item">
+											<a href="mailto:thtan0407@gmail.com"
+											   class="d-flex align-items-center justify-content-start py-2">
+												<i class="fas fa-comment-dots"></i>
+												thtan0407@gmail.com
+											</a>
+										</div>
+										<div class="ml-auto d-flex align-items-center justify-content-end">
+											<div class="text-white">
+												Doanh thu: <span class="font-weight-bold">0 <sup>đ</sup></span>
+											</div>
+											<div class="text-white ml-md-5">
+												Số dư: <span class="font-weight-bold">0 <sup>đ</sup></span>
+											</div>
+											<div class="ml-md-5">
+												<a class="text-white" href="#">Lịch sử quỹ</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="detail-form py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="form-inner p-4 bg-white border rounded shadow-sm">
+							<div class="row">
+								<div class="col-12">
+									<div class="heading h5 mb-4 text-dark font-weight-bolder">
+										Cập nhật thông tin
+									</div>
+								</div>
+								<div class="col-md-12">
+									<form action="" class="form-effect my-0 p-0">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="group-effect">
+													<input type="text" id="fullname" value="Triệu Hoàng Tấn"
+													       class="input-effect valid">
+													<label class="label-effect" for="fullname">
+														<i class="fas fa-address-card"></i>
+														<span>Tên hiện tại</span>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="group-effect">
+													<input type="tel" id="phone" value="0333.851.195"
+													       class="input-effect valid">
+													<label class="label-effect" for="phone">
+														<i class="fas fa-phone-alt"></i>
+														<span>Số điện thoại</span>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="group-effect">
+													<input type="email" id="email" value="thtan0407@gmail.com"
+													       class="input-effect valid">
+													<label class="label-effect" for="email">
+														<i class="fas fa-envelope"></i>
+														<span>Email</span>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="group-effect">
+													<input type="date" id="birthday" value="1995-07-04"
+													       class="input-effect valid">
+													<label class="label-effect" for="birthday">
+														<i class="fas fa-birthday-cake"></i>
+														<span>Ngày sinh</span>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="group-effect">
+													<select name="" class="input-effect valid" id="sex">
+														<option value="1" selected>Nam</option>
+														<option value="2">Nữ</option>
+													</select>
+													<label class="label-effect" for="sex">
+														<i class="fas fa-venus-mars"></i>
+														<span>Giới tính</span>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="group-effect group-textarea">
+													<textarea id="address" class="input-effect valid">141/23A Trần Hoàng Na, Ninh Kiều, Cần Thơ</textarea>
+													<label class="label-effect" for="address">
+														<i class="fas fa-address-book"></i>
+														<span>Địa chỉ</span>
+													</label>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="form-button">
+													<button type="submit" class="btn btn-primary btn-customize py-2">
+														<span>
+															Lưu thông tin
+														</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-inner p-4 bg-white border rounded shadow-sm">
+							<div class="row">
+								<div class="col-12">
+									<div class="heading h5 mb-4 text-dark font-weight-bolder">
+										Đổi mật khẩu
+									</div>
+								</div>
+								<div class="col-12">
+									<form action="" class="form-effect my-0 p-0">
+										<div class="row">
+											<div class="col-12">
+												<div class="group-effect">
+													<input type="text" id="password" value="************"
+													       class="input-effect valid">
+													<label class="label-effect" for="password">
+														<i class="fas fa-lock"></i>
+														<span>Mật khẩu</span>
+													</label>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="group-effect">
+													<input type="password" id="passwordNew"
+													       class="input-effect">
+													<label class="label-effect" for="passwordNew">
+														<i class="fas fa-lock"></i>
+														<span>Mật khẩu mới</span>
+													</label>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="form-button">
+													<button type="submit" class="btn btn-primary btn-customize py-2">
+													<span>
+														Đổi mật khâu
+													</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="detail-table mb-5">
+			<div class="container">
+				<div class="form-inner p-4 bg-white border rounded shadow-sm">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="heading h5 mb-4 text-dark font-weight-bolder">
+								Table thông tin
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="table-responsive" id="tableModule">
+								<table class="table table-bordered table-theme">
+									<thead>
+									<tr class="bg-theme">
+										<th class="text-center">STT</th>
+										<th class="text-center">Mô-đun</th>
+										<th class="text-center">Mô tả</th>
+										<th class="text-center">Bao gồm</th>
+										<th class="text-center"></th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr data-toggle="collapse" data-target="#module18">
+										<td class="text-center">1</td>
+										<td><strong>Quản trị hệ thống</strong></td>
+										<td>Các mô-đun thiết lập các cấu hình cho toàn bộ website.</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module18" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Đăng nhập hệ thống</li>
+													<li>Bảo mật 2 bước (Email, SMS, hoặc Google Authenticator)</li>
+													<li>Trang dashboard sử dụng theme AdminLTE 3</li>
+													<li>Các thống kê vắn tắt dữ liệu của các mô-đun</li>
+													<li>Cấu hình hệ thống (các cài đặt chung, cài đặt thành viên, cài
+														đặt bảo mật, cài đặt kết nối, mã nhúng js)
+													</li>
+													<li>Cấu hình mail (SMTP, Sendgrid, Amazon SES)</li>
+													<li>Xóa dữ liệu, rác, sao lưu dữ liệu</li>
+													<li>Lịch sử đăng nhập hệ thống</li>
+													<li>Quản lý quốc gia, vùng lãnh thổ</li>
+													<li>Tự động nhận dạng quốc gia thông qua IP người dùng</li>
+													<li>Quản lý menu của website</li>
+													<li>Quản lý tài khoản ngân hàng của khách hàng</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module19">
+										<td class="text-center">2</td>
+										<td><strong>Khách hàng</strong></td>
+										<td>Các tính năng liên quan đến khách hàng của website</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module19" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Thành viên đăng ký/đăng nhập</li>
+													<li>Đăng nhập bằng facebook/google</li>
+													<li>Quên mật khẩu, khôi phục mật khẩu bằng email hoặc sms</li>
+													<li>Trang cá nhân, chỉnh sửa thông tin tài khoản</li>
+													<li>Bảo mật tài khoản 2 bước (Email, SMS, Google Authenticator, Mật
+														khẩu cấp 2)
+													</li>
+													<li>Lịch sử đăng nhập tài khoản</li>
+													<li>Thêm/sửa/xóa/khóa thành viên trong trang quản trị</li>
+													<li>Trang danh sách, lọc, tìm kiếm thành viên</li>
+													<li>Đăng nhập vào tài khoản khách hàng từ trang quản trị</li>
+													<li>Quản lý thêm/sửa/xóa nhóm thành viên</li>
+													<li>Quản lý quyền hạn và vai trò<br>
+														&nbsp;
+													</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module20">
+										<td class="text-center">3</td>
+										<td><strong>Tiền tệ</strong></td>
+										<td>Quản trị các loại tiền tệ cho hệ thống</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module20" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Quản lý thêm/sửa/xóa các loại tiền tệ</li>
+													<li>Cấu hình tỷ giá giữa các loại tiền tệ</li>
+													<li>Tự động nhập nhật tỷ giá VND/USD</li>
+													<li>Hiển thị phần thay đổi tiền tệ ở trang người dùng</li>
+													<li>Thiết lập loại tiền tệ mặc định cho từng thành viên</li>
+													<li>Quy đổi giá trị tiền tệ giữa các loại khi đặt hàng</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module21">
+										<td class="text-center">4</td>
+										<td><strong>Ngôn ngữ</strong></td>
+										<td>Quản trị các loại ngôn ngữ và biên dịch trực tuyến</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module21" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Quản lý thêm/sửa/xóa các loại ngôn ngữ</li>
+													<li>Dịch và xuất bản ngôn ngữ trong trang quản trị</li>
+													<li>Hiển thị phần thay đổi ngôn ngữ ở trang người dùng</li>
+													<li>Thiết lập ngôn ngữ mặc định cho từng thành viên<br>
+														&nbsp;
+													</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module22">
+										<td class="text-center">5</td>
+										<td><strong>Trang tĩnh</strong></td>
+										<td>Thêm các trang thông tin cho website</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module22" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Quản lý thêm/sửa/xóa các bài viết tĩnh (quy định sử dụng, quyền
+														riêng tư…)
+													</li>
+													<li>Danh sách các bài viết trong trang quản trị</li>
+													<li>Cấu hình Seo Onpage cho từng bài viết</li>
+													<li>Hiển thị chi tiết các bài viết ở trang người dùng</li>
+													<li>Đa ngôn ngữ</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module23">
+										<td class="text-center">6</td>
+										<td><strong>Tin tức</strong></td>
+										<td>Trang tin tức đơn giản giúp bạn đăng tải các thông tin và sự kiện</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module23" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Tin tức</li>
+													<li>Quản lý thêm/sửa/xóa các bài viết</li>
+													<li>Danh sách tin tức trong trang quản trị</li>
+													<li>Cấu hình Seo Onpage cho từng bài viết</li>
+													<li>Tạo danh mục tin tức</li>
+													<li>Hiển thị tin tức theo danh mục</li>
+													<li>Hiển thị chi tiết bài viết</li>
+													<li>Đa ngôn ngữ</li>
+													<li>Quản lý tags</li>
+													<li>Hiển thị tin mới nhất, tin cùng chủ đề</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module24">
+										<td class="text-center">7</td>
+										<td><strong>Trình diễn ảnh</strong></td>
+										<td>Ảnh chạy trên trang chủ hoặc các trang phụ</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module24" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Quản lý thêm/sửa/xóa slide</li>
+													<li>Hiển thị slide ở trang người dùng<br>
+														&nbsp;
+													</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module25">
+										<td class="text-center">8</td>
+										<td><strong>Khối dữ liệu</strong></td>
+										<td>Quản trị các khối dữ liệu động trên giao diện website</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module25" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Quản lý thêm/sửa/xóa các khối dữ liệu</li>
+													<li>Thêm nội dung cho khối dữ liệu</li>
+													<li>Hiển thị khối dữ liệu ở trang người dùng</li>
+													<li>Đa ngôn ngữ<br>
+														&nbsp;
+													</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module26">
+										<td class="text-center">9</td>
+										<td><strong>Gửi sms</strong></td>
+										<td>Quản trị các nhà cung cấp sms và gửi sms</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module26" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Quản lý cài đặt các nhà cung cấp gửi sms (ESMS, FPT SMS,
+														SMSNHANH)
+													</li>
+													<li>Cấu hình kết nối API</li>
+													<li>Cài đặt gửi sms OTP hoặc ODP</li>
+													<li>Lịch sử gửi SMS</li>
+													<li>Kết nối nhận thông báo bằng Telegram Bot chat (theo kịch bản)
+													</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module27">
+										<td class="text-center">10</td>
+										<td><strong>Quỹ số dư</strong></td>
+										<td>Cho phép người dùng ký quỹ trên website để giao dịch mua hàng</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module27" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Danh sách các loại quỹ</li>
+													<li>Lọc tìm kiếm quỹ</li>
+													<li>Cấu hình các loại quỹ</li>
+													<li>Nạp tiền cho quỹ&nbsp;trong trang quản trị</li>
+													<li>Rút tiền từ quỹ&nbsp;trong trang quản trị</li>
+													<li>Mã hóa số dư quỹ&nbsp;SHA256</li>
+													<li>Hiển thị số dư quỹ&nbsp;tại trang người dùng</li>
+													<li>Lịch sử quỹ, lọc/tìm kiếm</li>
+													<li>Tạo yêu cầu nạp tiền vào quỹ&nbsp;tại trang người dùng</li>
+													<li>Lịch sử nạp tiền</li>
+													<li>Tạo yêu rút tiền từ quỹ&nbsp;về ngân hàng, xác thực 2 bước khi
+														rút tiền
+													</li>
+													<li>Lịch sử rút tiền</li>
+													<li>Danh sách &nbsp;yêu cầu nạp/rút tiền trong quản trị. Xử lý yêu
+														cầu nạp rút (chấp nhận/hủy yêu cầu)
+													</li>
+													<li>Thành viên thêm/xóa các ngân hàng nhận tiền.</li>
+													<li>Chuyển số dư giữa các quỹ, xác thực 2 bước khi chuyển số dư</li>
+													<li>Lịch sử chuyển số dư</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module28">
+										<td class="text-center">11</td>
+										<td><strong>Cổng thanh toán</strong></td>
+										<td>Các phương thức thanh toán online/offline cho website</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module28" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Quản lý cài đặt, tắt, bật các cổng thanh toán</li>
+													<li>Cấu hình phí nạp, rút, chuyển theo từng nhóm người dùng cho từng
+														loại cổng thanh toán
+													</li>
+													<li>Danh cách các cổng thanh toán đã cài đặt và chưa cài đặt</li>
+													<li>Hỗ trợ các cổng cơ bản sau: Chuyển khoản ATM, Ngân lượng,
+														Onepay, Số dư website (các cổng khác theo yêu cầu)
+													</li>
+													<li>Cấu hình kết nối thanh toán, tạo yêu cầu thanh toán cho đơn
+														hàng.
+													</li>
+													<li>Tự động quy đổi tiền tệ</li>
+													<li>Hiển thị danh sách cổng thanh toán khi mua hàng, nạp tiền, rút
+														tiền
+													</li>
+													<li>Lịch sử thanh toán</li>
+													<li>Tự động cập nhật trạng thái thanh toán đối với các cổng thanh
+														toán trực tuyến.
+													</li>
+													<li>Phân quyền cho từng đối tượng sử dụng đối với từng loại cổng
+														thanh toán
+													</li>
+													<li>Hiển thị cổng thanh toán tại trang đặt hàng</li>
+													<li>Tự động cập nhật trạng thái đơn hàng với những cổng thanh toán
+														trực tuyến
+													</li>
+													<li>Lịch sử thanh toán<br>
+														&nbsp;
+													</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module29">
+										<td class="text-center">12</td>
+										<td><strong>Bán thẻ điện tử</strong></td>
+										<td>Bán các loại mã thẻ, voucher, thẻ quà tặng dưới dạng mã văn bản</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module29" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Quản lý thêm/sửa/xóa sản phẩm</li>
+													<li>Danh sách sản phẩm, lọc, tìm kiếm sản phẩm</li>
+													<li>Quản lý thêm/sửa/xóa danh mục sản phẩm</li>
+													<li>Quản lý thêm/sửa/xóa các mệnh giá, chiết khấu theo nhóm</li>
+													<li>Cấu hình giá nhập, giá bán theo nhóm người dùng và các loại tiền
+														tệ
+													</li>
+													<li>Cấu hình Seo Onpage cho từng sản phẩm</li>
+													<li>Quản lý đơn mua hàng, các chức năng xử lý đơn hàng</li>
+													<li>Thống kê bán hàng</li>
+													<li>Hiển thị danh sách sản phẩm theo danh mục</li>
+													<li>Hiển thị chi tiết sản phẩm</li>
+													<li>Đặt mua hàng, giỏ hàng</li>
+													<li>Lịch sử mua hàng của người dùng</li>
+													<li>Quản lý kho thẻ, mã hóa mã nạp chuẩn RSA256, tìm kiếm theo
+														serial
+													</li>
+													<li>Nhập thẻ bằng form và excel</li>
+													<li>Chi tiết đơn hàng, in mã, copy mã thẻ</li>
+													<li>Cấu hình nhà cung cấp mã thẻ (hỗ trợ kho tự nhập, netpay,
+														vtcpay)<br>
+														&nbsp;
+													</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module30">
+										<td class="text-center">13</td>
+										<td><strong>Nạp tiền topup</strong></td>
+										<td>Nạp tiền điện thoại, nạp tiền game trực tuyến</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module30" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Cấu hình thêm/sửa/xóa loại dịch vụ</li>
+													<li>Cấu hình chiết khấu nạp tiền theo từng nhóm thành viên</li>
+													<li>Cấu hình thêm/sửa/xóa loại nhà cung cấp, cấu hình kết nối</li>
+													<li>Quản lý đơn nạp tiền, các chức năng xử lý đơn hàng</li>
+													<li>Thống kê nạp tiền, tìm kiếm, lọc</li>
+													<li>Khách hàng tạo đơn nạp tiền, thanh toán</li>
+													<li>Lịch sử nạp tiền của khách hàng</li>
+													<li>Hủy đơn nạp tiền và hoàn tiền</li>
+													<li>Nhập đơn bằng excel</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module31">
+										<td class="text-center">14</td>
+										<td><strong>Đổi thẻ cào</strong></td>
+										<td>Thu mua các loại thẻ cào của khách hàng muốn bán</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module31" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Quản lý thêm/sửa/xóa loại thẻ</li>
+													<li>Quản lý thêm/sửa/xóa các nhà cung cấp đổi thẻ</li>
+													<li>Cấu hình mệnh giá, chiết khấu theo nhóm, cấu hình nhà cung cấp
+														đổi theo theo mệnh giá
+													</li>
+													<li>Quản lý đơn hàng đổi thẻ, các chức năng xử lý thẻ</li>
+													<li>Thống kê sản lượng, tìm kiếm, lọc</li>
+													<li>Form đổi thẻ của khách hàng, nhập nhiều thẻ một lúc</li>
+													<li>Thống kê sản lượng đổi thẻ</li>
+													<li>Hệ thống API nhận thẻ, quản lý log, callback</li>
+													<li>Tự động cộng tiền sau khi thẻ được xử lý thành công<br>
+														&nbsp;
+													</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									
+									<tr data-toggle="collapse" data-target="#module32">
+										<td class="text-center">15</td>
+										<td><strong>Trang chủ</strong></td>
+										<td>Các bố cục, dữ liệu hiển thị trên trang chủ của website</td>
+										<td class="text-center"><i class="fas fa-check color-green"></i>
+										</td>
+										<td class="text-center">
+											<a href="javascript:void(0)" class="btn btn-customize btn-primary">
+												<span>Xem chi tiết</span>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="p-0 border-0">
+											<div id="module32" class="collapse border" data-parent="#tableModule">
+												<ul>
+													<li>Giao diện mặc định</li>
+													<li>Sử dụng công nghệ bootstrap 3 hoặc 4</li>
+													<li>Tương thích với phần lớn các thiết bị di động hiện tại</li>
+													<li>Hỗ trợ sitemap (xml hoặc json) với phần sản phẩm, tin tức</li>
+													<li>Seo Onpage chuẩn google (meta tags và json-ld)</li>
+													<li>Rewrite đường dẫn website chuẩn google</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="footer-top bg-light border-top py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<a href="index.html" class="d-inline-block">
+						<img class="w-100" src="./assets/images/logo.png" alt="Template Document 123doc.net">
+					</a>
+				</div>
+			</div>
+			<div class="row py-5">
+				<div class="col-12">
+					<div class="d-flex align-items-center justify-content-center flex-wrap list-tags">
+						<a href="#" class="d-inline-block">Tai lieu</a>
+						<a href="#" class="d-inline-block">Mục lục</a>
+						<a href="#" class="d-inline-block">Bài viết</a>
+						<a href="#" class="d-inline-block">Tìm kiếm mới</a>
+						<a href="#" class="d-inline-block">Luận văn</a>
+						<a href="#" class="d-inline-block">Tài liệu mới</a>
+						<a href="#" class="d-inline-block">Chủ đề tài liệu mới đăng</a>
+						<a href="#" class="d-inline-block">Tạo cv xin việc</a>
+						<a href="#" class="d-inline-block">nencer.vn</a>
+						<a href="#" class="d-inline-block">tìm kiếm mua bán nhà đất</a>
+						<a href="#" class="d-inline-block">Tai lieu</a>
+						<a href="#" class="d-inline-block">Mục lục</a>
+						<a href="#" class="d-inline-block">Bài viết</a>
+						<a href="#" class="d-inline-block">Tìm kiếm mới</a>
+						<a href="#" class="d-inline-block">Luận văn</a>
+						<a href="#" class="d-inline-block">Tài liệu mới</a>
+						<a href="#" class="d-inline-block">Chủ đề tài liệu mới đăng</a>
+						<a href="#" class="d-inline-block">Tạo cv xin việc</a>
+						<a href="#" class="d-inline-block">nencer.vn</a>
+						<a href="#" class="d-inline-block">tìm kiếm mua bán nhà đất</a>
+						<a href="#" class="d-inline-block">Tai lieu</a>
+						<a href="#" class="d-inline-block">Mục lục</a>
+						<a href="#" class="d-inline-block">Bài viết</a>
+						<a href="#" class="d-inline-block">Tìm kiếm mới</a>
+						<a href="#" class="d-inline-block">Luận văn</a>
+						<a href="#" class="d-inline-block">Tài liệu mới</a>
+						<a href="#" class="d-inline-block">Chủ đề tài liệu mới đăng</a>
+						<a href="#" class="d-inline-block">Tạo cv xin việc</a>
+						<a href="#" class="d-inline-block">nencer.vn</a>
+						<a href="#" class="d-inline-block">tìm kiếm mua bán nhà đất</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-small">
+				<div class="row">
+					<div class="col-md-4 mb-3 mb-md-0 text-center text-md-left">
+						<div class="footer-inner">
+							<div class="footer-title mb-3 font-weight-bold text-black">
+								Hỗ trợ khách hàng
+							</div>
+							<div class="footer-list">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">
+											<i class="fal fa-envelope"></i>
+											info@123doc.org
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-3 mb-md-0 text-center text-md-left">
+						<div class="footer-inner">
+							<div class="footer-title mb-3 font-weight-bold text-black">
+								Giúp đỡ
+							</div>
+							<div class="footer-list">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">
+											Câu hỏi thường gặp
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Điều khoản sử dựng
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Quy định chính sách bán tài liệu
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Hướng dẫn thanh toán
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-3 mb-md-0 text-center text-md-left">
+						<div class="footer-inner">
+							<div class="footer-title mb-3 font-weight-bold text-black">
+								Giới thiệu
+							</div>
+							<div class="footer-list">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">
+											123doc là gì?
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom bg-white py-2 border-top position-relative">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center text-muted">
+					<p class="mb-1">Bản quyền năm 2021 nencer. Design by Nencer.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/select2/select2.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+<script type="text/javascript" src="./assets/plugin/slick/slick.js"></script>
+<script type="text/javascript" src="./assets/js/theme-script.js"></script>
+
+</body>
+</html>

@@ -58,6 +58,8 @@ $(document).ready(function () {
 		$(this).val() != '' ? $(this).addClass('valid') : $(this).removeClass('valid');
 	});
 	
+	$('#theme-sel2').select2();
+	
 	$('#theme-sel2').on('select2:opening', function (e) {
 		$(this).addClass('valid');
 	});
@@ -96,5 +98,4 @@ $(document).ready(function () {
 			$(this).prev('.desc-content').addClass('content-full');
 		}
 	});
-	$('.theme-sel2').select2();
 })
